@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Travel Club CSS Practice</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='travel-club.css'>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Adventure Travel Club</h1>
+            <p>Begin your journey with fellow adventurers</p>
+        </div>
+
+        <div class="section">
+
+            <h2>Personal Information</h2>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" required>
+                </div>
+
+                <div class="form-group">
+
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" required>
+                </div>
+
+
+            </div>
+
+                <label for="email">Email Address</label>
+                <input type="text" id="email" required>
+
+                <label for="date">Date of Birth</label>
+                <input type="date" id="date" required>
+
+        </div>
+        
+            <div class="section">
+                <h2>Adventure Preferences</h2>
+
+                <!-- Experience Level Dropdown -->
+                <div class="form-group">
+
+                    <label>Experience Level</label>
+
+                    <select required>
+                        <option value="">Select your experience level</option>
+                        <option>Beginner - New to adventure travel</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                     </select>
+
+                </div>
+
+                <!-- Checkboxes and Radio buttons -->
+                <label for="checkbox">Preferred Activites</label>
+                <input type="checkbox" id="checkbox" name="checkbox" value="Hiking">Hiking<br>
+                <input type="checkbox" id="checkbox" name="checkbox" value="Hiking">Rock Climbing<br>
+                <input type="checkbox" id="checkbox" name="checkbox" value="Hiking">Kayaking<br>
+                <input type="checkbox" id="checkbox" name="checkbox" value="Hiking">Scuba Diving<br><br>
+
+                <label for="radio">Preferred Trip Duration</label>
+                <input type="radio" id="radio" name="radio" value="hiking">Weekend Trips (2-3 Days)<br>
+                <input type="radio" id="radio" name="radio" value="hiking">Week-Long Adventures (5-7 Days)<br>
+                <input type="radio" id="radio" name="radio" value="hiking"> Extended Expeditions (2+Weeks)<br>
+            
+
+            </div>
+
+            <div class="section">
+
+                <h2>Additional Information</h2>
+
+                <!-- id=1-10 -->
+                <label>Fitness Level (1-10)</label>
+                <div class="meter">
+                    <p>1</p>
+                    <p>5</p>
+                    <p>10</p>
+                </div>
+                <input type="range" min="1" max="11">
+
+                <br><br><label>Tell us About Yourself</label>
+                <textarea rows="5" cols="5" name="message"  class="required2">Share your adventure experiences and what excites you about joining our club...</textarea>
+
+                <br><br><label>Profile Photo</label>
+                <input type="file" accept="image/*">
+
+            </div>
+
+            <input type="checkbox" id="confirmation" name="confirmation" value="check">I agree to the Terms and Conditions and Privacy Policy 
+
+            <br><br><br><input type="button" onclick="alert('submission completed!')" value="Submit Resgistration" style="background-color: #1e3c72; color:white; border-color: aliceblue; border-radius: 5px; width: 95%; height: 40px;">
+
+
+
+    </div>
+
+    
+</body>
+</html>
